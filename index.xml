@@ -18,22 +18,8 @@
       
       <guid>https://utit.github.io/pages/about/</guid>
       <description>Assalamu&amp;rsquo;alaikum
-Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya membangun lebih asyik ketimbang mengisi konten blog.</description>
-    </item>
-    
-    <item>
-      <title>Memasang Postgresql di ubuntu 18.04</title>
-      <link>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</link>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</guid>
-      <description>&lt;p&gt;Berikut merupakan cara singkat, bagaimana memasang Postgresql pada ubuntu 18.04&lt;/p&gt;
-&lt;p&gt;Ketik perintah berikut pada terminal&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt install postgresql postgresql-contrib
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;jalakan Postgresql dengan mengetikan perintah berikut&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo service postgresql start
-&lt;/code&gt;&lt;/pre&gt;</description>
+Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya membangun lebih asyik ketimbang mengisi konten blog. Akhirnya dan semoga ini yang terakhir, ana membuat blog lagi dengan menggunakan github page dengan menggunakan CMS milik Hugo.
+Selain artikel-artikel yang akan ana tulis disini, ana juga akan berbagi hal-hal yang sudah ana kerjakan yang barangkali ada dari sebagian dari teman-teman pengunjung yang sedang mencari jasa web developer atau grahpic designer. In syaa allah ana siap membantu project impianmu sesuai dengan harapan antum.</description>
     </item>
     
     <item>
@@ -43,6 +29,21 @@ Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya memba
       
       <guid>https://utit.github.io/pages/projects/</guid>
       <description>My Projects</description>
+    </item>
+    
+    <item>
+      <title>Memasang Postgresql di ubuntu 18.04</title>
+      <link>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</guid>
+      <description>&lt;p&gt;Berikut merupakan cara singkat, bagaimana memasang Postgresql pada ubuntu 18.04&lt;/p&gt;
+&lt;p&gt;Ketik perintah berikut pada terminal&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install postgresql postgresql-contrib
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;jalakan Postgresql dengan mengetikan perintah berikut&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo service postgresql start
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
