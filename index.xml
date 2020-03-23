@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Triyadi (Abu Uwais)</title>
-    <link>https://example.org/</link>
+    <link>https://utit.github.io/</link>
     <description>Recent content on Triyadi (Abu Uwais)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utit.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Me</title>
-      <link>https://example.org/pages/about/</link>
+      <link>https://utit.github.io/pages/about/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/pages/about/</guid>
+      <guid>https://utit.github.io/pages/about/</guid>
       <description>Assalamu&amp;rsquo;alaikum
 Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya membangun lebih asyik ketimbang mengisi konten blog.</description>
     </item>
     
     <item>
       <title>Memasang Postgresql di ubuntu 18.04</title>
-      <link>https://example.org/posts/memasang-postgresql-di-ubuntu/</link>
+      <link>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/memasang-postgresql-di-ubuntu/</guid>
+      <guid>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</guid>
       <description>&lt;p&gt;Berikut merupakan cara singkat, bagaimana memasang Postgresql pada ubuntu 18.04&lt;/p&gt;
 &lt;p&gt;Ketik perintah berikut pada terminal&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt install postgresql postgresql-contrib
@@ -38,10 +38,10 @@ Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya memba
     
     <item>
       <title>Projects</title>
-      <link>https://example.org/pages/projects/</link>
+      <link>https://utit.github.io/pages/projects/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/pages/projects/</guid>
+      <guid>https://utit.github.io/pages/projects/</guid>
       <description>My Projects</description>
     </item>
     
