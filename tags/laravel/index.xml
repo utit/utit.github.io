@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teknologi on Triyadi (Abu Uwais)</title>
-    <link>https://utit.github.io/categories/teknologi/</link>
-    <description>Recent content in Teknologi on Triyadi (Abu Uwais)</description>
+    <title>laravel on Triyadi (Abu Uwais)</title>
+    <link>https://utit.github.io/tags/laravel/</link>
+    <description>Recent content in laravel on Triyadi (Abu Uwais)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://utit.github.io/categories/teknologi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utit.github.io/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,21 +18,6 @@
       
       <guid>https://utit.github.io/posts/mencicipi-laragon/</guid>
       <description>Biasanya kita menggunakan XAMPP yang merupakan aplikasi wajib di sekolah ataupun kampus dalam belajar pemrograman web tertuma yang masih menggunakan windows. Dengan XAMPP, kita bisa membuat server untuk kebutuhan pembuatan website di lokal komputer kita. Menurut ana, paket yang dimiliki XAMPP sangatlah lengkap namun sayangnya, kebutuhan development web yang menggunakan framework, XAMPP kurang begitu bagus karena apalagi jika sudah berurusan dengan pengaturan versi dan ekstensi php yang perlu konfigurasi yang ribet.</description>
-    </item>
-    
-    <item>
-      <title>Memasang Postgresql di ubuntu 18.04</title>
-      <link>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://utit.github.io/posts/memasang-postgresql-di-ubuntu/</guid>
-      <description>&lt;p&gt;Berikut merupakan cara singkat, bagaimana memasang Postgresql pada ubuntu 18.04&lt;/p&gt;
-&lt;p&gt;Ketik perintah berikut pada terminal&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt install postgresql postgresql-contrib
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;jalakan Postgresql dengan mengetikan perintah berikut&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo service postgresql start
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

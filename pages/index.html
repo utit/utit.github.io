@@ -656,32 +656,54 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8"
-              src="https://avatars2.githubusercontent.com/u/6196949?s=460&u=0f4fba27497f3733721af8d1173e2c4e9df98100&v=4"
-              alt="" />
+            <a href="https://utit.github.io/">
+              <img class="h-8 w-8"
+                src="https://avatars2.githubusercontent.com/u/6196949?s=460&u=0f4fba27497f3733721af8d1173e2c4e9df98100&v=4"
+                alt="" />
+            </a>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline">
-              <a href="https://utit.github.io/"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-              <a href="https://utit.github.io/posts"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
-              <a href="https://utit.github.io/pages/about"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
-              <a href="https://utit.github.io/pages/projects"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Project</a>
-              <a href="https://utit.github.io/pages/jasa"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Jasa</a>
+              <a href="https://wa.me/6287865676649" target="_blank"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">+6287865676649</a>
+              <a href="https://t.me/triyaid" target="_blank"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">@triyaid</a>
             </div>
           </div>
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
             <div class="ml-10 flex items-baseline">
-              <a href="https://wa.me/6287865676649" target="_blank"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">+6287865676649</a>
-              <a href="https://t.me/triyaid" target="_blank"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">@triyaid</a>
+              <a href="https://utit.github.io/"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+              <div @click.away="open = false" class="ml-3 relative" x-data="{ open: false }">
+                <div>
+                  <button @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700">
+                    Blog
+                  </button>
+                </div>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter-end="transform opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-75"
+                  x-transition:leave-start="transform opacity-100 scale-100"
+                  x-transition:leave-end="transform opacity-0 scale-95"
+                  class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+                  <div class="py-1 rounded-md bg-white shadow-xs">
+                    
+                    <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
+                      href="/categories/teknologi">teknologi</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <a href="https://utit.github.io/pages/about"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+              <a href="https://utit.github.io/pages/projects"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Project</a>
+              <a href="https://utit.github.io/pages/jasa"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Jasa</a>
             </div>
           </div>
         </div>
@@ -702,8 +724,16 @@
       <div class="px-2 pt-2 pb-3 sm:px-3">
         <a href="https://utit.github.io/"
           class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-        <a href="https://utit.github.io/posts"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
+        <button
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</button>
+        <div class="pt-4 pb-3 border-t border-b border-gray-900">
+          <div class="mt-3 px-2">
+            
+            <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              href="/categories/teknologi">teknologi</a>
+            
+          </div>
+        </div>
         <a href="https://utit.github.io/pages/about"
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
         <a href="https://utit.github.io/pages/projects"
@@ -735,7 +765,10 @@
 
 
 <header class="list-header">
-  <h1 class="list-title">Artikel</h1>
+  
+  <h1 class="list-title">
+    pages
+  </h1>
   
 </header>
 
@@ -744,84 +777,31 @@
 
 
 
-
-<article class="post post-entry">
-  
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">About Me</div>
-    <p class="text-gray-700 text-base">
-      
-      Assalamu’alaikum
-Ini merupakan blog yang kesekian ana, sudah bertahun-tahun ngblog, rasanya membangun lebih asyik ketimbang mengisi konten blog. Akhirnya dan semoga ini yang terakhir, ana membuat blog lagi dengan menggunakan github page dengan menggunakan CMS milik Hugo.
-Selain artikel-artikel yang akan ana tulis disini, ana juga akan berbagi hal-hal yang sudah ana kerjakan yang barangkali ada dari sebagian dari teman-teman pengunjung yang sedang mencari jasa web developer atau grahpic designer. In syaa allah ana siap membantu project impianmu sesuai dengan harapan antum....
-      
-    </p>
-    <p class="post-meta"><time>23/3/2020</time></p>
+<a href="https://utit.github.io/pages/about/" class="w-6/12">
+  <div class="p-4 mb-2 border-b w-3/4 md:w-6/12 m-auto hover:shadow-md">
+    <span class="flex-grow font-semibold" data-config-id="question4">About Me</span>
   </div>
-  <div class="px-6 py-4">
-    
+</a>
+
+
+
+
+
+<a href="https://utit.github.io/pages/jasa/" class="w-6/12">
+  <div class="p-4 mb-2 border-b w-3/4 md:w-6/12 m-auto hover:shadow-md">
+    <span class="flex-grow font-semibold" data-config-id="question4">Jasa</span>
   </div>
-  <a alt="About Me" class="post-link" href="https://utit.github.io/pages/about/"></a>
-  <div class="px-6 py-4">
-    
+</a>
+
+
+
+
+
+<a href="https://utit.github.io/pages/projects/" class="w-6/12">
+  <div class="p-4 mb-2 border-b w-3/4 md:w-6/12 m-auto hover:shadow-md">
+    <span class="flex-grow font-semibold" data-config-id="question4">Projects</span>
   </div>
-
-</article>
-
-
-
-
-
-
-<article class="post post-entry">
-  
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Jasa</div>
-    <p class="text-gray-700 text-base">
-      
-      Jasa Web/Aplikasi Ana menawarkan jasa pembuatan website, aplikasi, sistem informasi atau sejenisnya, barangkali diantara antum ada yang membutuhkan. In syaa Allah harga bersahabat.
-Pesan Website  Jasa Desain Logo Ana juga menawarkan jasa pembuatan Logo, game assets (tidak menerima pesanan yang mengandung unsur mahkluk hidup), dengan menggunkana inkscape
-Pesan Design    Atau antum bisa mengunduh CV ana sebagai bahan pertimbangan sebelum menggunakan jasa ana.
-   Unduh CV    ...
-      
-    </p>
-    <p class="post-meta"><time>23/3/2020</time></p>
-  </div>
-  <div class="px-6 py-4">
-    
-  </div>
-  <a alt="Jasa" class="post-link" href="https://utit.github.io/pages/jasa/"></a>
-  <div class="px-6 py-4">
-    
-  </div>
-
-</article>
-
-
-
-
-
-
-<article class="post post-entry">
-  
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Projects</div>
-    <p class="text-gray-700 text-base">
-      
-      My Projects...
-      
-    </p>
-    <p class="post-meta"><time>23/3/2020</time></p>
-  </div>
-  <div class="px-6 py-4">
-    
-  </div>
-  <a alt="Projects" class="post-link" href="https://utit.github.io/pages/projects/"></a>
-  <div class="px-6 py-4">
-    
-  </div>
-
-</article>
+</a>
 
 
 

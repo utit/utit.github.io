@@ -689,32 +689,54 @@ sudo service postgresql start
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8"
-              src="https://avatars2.githubusercontent.com/u/6196949?s=460&u=0f4fba27497f3733721af8d1173e2c4e9df98100&v=4"
-              alt="" />
+            <a href="https://utit.github.io/">
+              <img class="h-8 w-8"
+                src="https://avatars2.githubusercontent.com/u/6196949?s=460&u=0f4fba27497f3733721af8d1173e2c4e9df98100&v=4"
+                alt="" />
+            </a>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline">
-              <a href="https://utit.github.io/"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-              <a href="https://utit.github.io/posts"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
-              <a href="https://utit.github.io/pages/about"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
-              <a href="https://utit.github.io/pages/projects"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Project</a>
-              <a href="https://utit.github.io/pages/jasa"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Jasa</a>
+              <a href="https://wa.me/6287865676649" target="_blank"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">+6287865676649</a>
+              <a href="https://t.me/triyaid" target="_blank"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">@triyaid</a>
             </div>
           </div>
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
             <div class="ml-10 flex items-baseline">
-              <a href="https://wa.me/6287865676649" target="_blank"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">+6287865676649</a>
-              <a href="https://t.me/triyaid" target="_blank"
-                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">@triyaid</a>
+              <a href="https://utit.github.io/"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+              <div @click.away="open = false" class="ml-3 relative" x-data="{ open: false }">
+                <div>
+                  <button @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700">
+                    Blog
+                  </button>
+                </div>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter-end="transform opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-75"
+                  x-transition:leave-start="transform opacity-100 scale-100"
+                  x-transition:leave-end="transform opacity-0 scale-95"
+                  class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+                  <div class="py-1 rounded-md bg-white shadow-xs">
+                    
+                    <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
+                      href="/categories/teknologi">teknologi</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <a href="https://utit.github.io/pages/about"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+              <a href="https://utit.github.io/pages/projects"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Project</a>
+              <a href="https://utit.github.io/pages/jasa"
+                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Jasa</a>
             </div>
           </div>
         </div>
@@ -735,8 +757,16 @@ sudo service postgresql start
       <div class="px-2 pt-2 pb-3 sm:px-3">
         <a href="https://utit.github.io/"
           class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-        <a href="https://utit.github.io/posts"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
+        <button
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</button>
+        <div class="pt-4 pb-3 border-t border-b border-gray-900">
+          <div class="mt-3 px-2">
+            
+            <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              href="/categories/teknologi">teknologi</a>
+            
+          </div>
+        </div>
         <a href="https://utit.github.io/pages/about"
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
         <a href="https://utit.github.io/pages/projects"
@@ -765,17 +795,16 @@ sudo service postgresql start
     </nav>
   </header>
   <main class="main">
+
+<img class="w-full -mt-16 mb-10 border-0" src="https://miro.medium.com/max/8640/0*jD8Zg8_87AA_3o2w">
+
 <article class="post post-view">
   <header class="post-header">
     <h1 class="post-title">Memasang Postgresql di ubuntu 18.04</h1>
-    <p class="post-meta float-right">Triyadi · 
-      <time>22/3/2020</time>,
-      Banyumas
+    <p class="post-meta md:text-right lg:text-right text-center">Triyadi - 
+      <time>Sunday, 22 Mar 2020</time>
+      @Banyumas
     </p>
-
-    
-    <img class="w-full" src="https://miro.medium.com/max/8640/0*jD8Zg8_87AA_3o2w">
-    
   </header>
   <div class="post-content"><p>Berikut merupakan cara singkat, bagaimana memasang Postgresql pada ubuntu 18.04</p>
 <p>Ketik perintah berikut pada terminal</p>
@@ -828,7 +857,7 @@ local   all             postgres                  md5
 <pre><code>sudo service postgresql restart
 </code></pre>
 <p>Sekarang kita coba dengan membuka postgresql dengan menggunakan adminer and tadaaa.</p>
-<p><img src="https://im7.ezgif.com/tmp/ezgif-7-31888f699ac1.gif" alt="Test pake adminer"></p>
+<p><img src="/static/postimages/adminer.gif" alt="Test pake adminer"></p>
 <p>Semoga bermanfaat.</p></div>
   <footer class="post-footer">
     <div class="px-6 py-4">
@@ -853,7 +882,9 @@ local   all             postgres                  md5
     
 
   </p>
+  
   <div id="disqus_thread"></div>
+  
 </article>
 </main>
 
