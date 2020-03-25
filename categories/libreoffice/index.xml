@@ -22,6 +22,18 @@
     </item>
     
     <item>
+      <title>Rumus if pada libreoffice calc</title>
+      <link>https://abuuwais.my.id/posts/sumus-if-pada-libreoffice-calc/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abuuwais.my.id/posts/sumus-if-pada-libreoffice-calc/</guid>
+      <description>Mungkin sebagian dari kita belum tahu &amp;ldquo;kok bisa ya ketika kita nge input nilai yang kurang aplikasi langsung ngasih tahu kalo aungnya kurang?&amp;rdquo; atau sejenisnya. dalam praktik ini, ana berbagi bagaimana menggunakan perintah atau rumus arithmetic pada libreoffice calc.
+Rumus yang ana gunakan pada contoh ini sangatlah sederhana jadi bisa antum pelajari bahkan kembangkan lagi, berikut daftar rumus yang ana gunakan
+ (SUM) untuk penjumlahan dengan kode =SUM(cellAwal:cellAkhit)
+  (*) untuk perkalian dengan kode =(cellAwal*cellAkhir)</description>
+    </item>
+    
+    <item>
       <title>Mengenal Libreoffice</title>
       <link>https://abuuwais.my.id/posts/mengenal-libreoffice/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
